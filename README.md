@@ -1,6 +1,6 @@
 VS Code extension for formatting AL files.
 
-![Formatting Example](https://bytebucket.org/rasmustidselbak/al-formatter/raw/470a9f1d65f008614d7267d097335b919e359257/client/images/al_formatter.gif)
+![Formatting Example](https://github.com/RasmusTidselbak/al-formatter/blob/master/client/images/al_formatter.gif?raw=true)
 
 
 ### Features
