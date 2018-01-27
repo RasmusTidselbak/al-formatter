@@ -1,0 +1,20 @@
+{ 
+    "Document": [
+        {
+            "al-object" : {
+                "propertyBlock": ["properties|trigger|procedure"],
+                "trigger|procedure": { 
+                    "header": "function definition",
+                    "varArray": [
+                        { 
+                            "name": "Variable definition (name)",
+                            "type": "Record|Codeunit etc",
+                            "typeSpec": "Customer| ENU=''"
+                        }
+                    ],
+                    "codeblock":["codeSymbols"]
+                }
+            }
+        }
+    ]
+}

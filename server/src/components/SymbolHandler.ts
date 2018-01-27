@@ -1,0 +1,107 @@
+export default class SymbolHandler {
+    public static isSymbol(keyword: string): boolean {
+        let index: number = -1;
+        this.symbols.some((element, i) => {
+            if (keyword.toLowerCase() === element.toLowerCase()) {
+                index = i;
+                return true;
+            }
+        });
+        return index >= 0;
+    }
+
+    private static standardFunctions: string[] = [
+        "DateFormula",
+        "Error",
+        "Message",
+        "FindSet",
+        "FindFirst",
+        "FindLast",
+        "Find",
+        "Next",
+        "CalcFields",
+        "HasValue",
+        "SetRange",
+        "SetFilter",
+        "Format",
+        "RunModal",
+        "Run",
+        "Action",
+        "SetTableView",
+        "Update",
+        "Insert",
+        "Modify",
+        "Get",
+        "SetRecord",
+        "GetRecord",
+        "LookupMode"
+    ];
+
+    private static symbols: string[] = [
+        "BigText",
+        "Blob",
+        "Codeunit",
+        "Dialog",
+        "FieldRef",
+        "File",
+        "Guid",
+        "InStream",
+        "OutStream",
+        "KeyRef",
+        "Page",
+        "Record",
+        "RecordID",
+        "RecordRef",
+        "Report",
+        "System",
+        "TableFilter",
+        "BigInteger",
+        "Binary",
+        "Boolean",
+        "Char",
+        "Code",
+        "Date",
+        "DateTime",
+        "Decimal",
+        "Duration",
+        "Integer",
+        "Option",
+        "Text",
+        "Time",
+        "Variant",
+        "and",
+        "AssertError",
+        "begin",
+        "case",
+        "div",
+        "do",
+        "DownTo",
+        "else",
+        "end",
+        "exit",
+        "for",
+        "if",
+        "in",
+        "mod",
+        "not",
+        "of",
+        "or",
+        "repeat",
+        "then",
+        "to",
+        "until",
+        "while",
+        "with",
+        "with",
+        "var",
+        "procedure",
+        "temporary",
+        "true",
+        "false",
+        "XmlPort",
+        "TextConst",
+        "Where",
+        "field",
+        "UserId"
+    ];
+}

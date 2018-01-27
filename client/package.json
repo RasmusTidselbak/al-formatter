@@ -1,0 +1,58 @@
+{
+  "name": "al-formatter",
+  "description": "Formatting AL code, fixes indenting, casing and variable sorting",
+  "author": "Rasmus Aaen",
+  "license": "MIT",
+  "version": "2.1.0",
+  "publisher": "rasmus",
+  "icon": "images/logo128.png",
+  "repository": {
+    "type": "git",
+    "url": "https://rasmustidselbak@bitbucket.org/rasmustidselbak/al-formatter.git"
+  },
+  "displayName": "AL Formatter",
+  "engines": {
+    "vscode": "^1.16.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:al"
+  ],
+  "main": "./out/src/extension",
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "update-vscode": "node ./node_modules/vscode/bin/install",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^6.0.88",
+    "typescript": "^2.5.2",
+    "vscode": "^1.0.3"
+  },
+  "contributes": {
+    "configuration": {
+      "type":"object",
+      "title": "AL Formatter Configuration",
+      "properties": {
+        "alform.lineLength": {
+          "type":"number",
+          "default":120,
+          "description": "Controls the max length of the lines formatted."
+        },
+        "alform.experimental": {
+          "type":"boolean",
+          "default":false,
+          "description": "Enable the experimental features."
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "vscode": "^1.1.5",
+    "vscode-languageclient": "^3.4.5"
+  }
+}
